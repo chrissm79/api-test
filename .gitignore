@@ -1,0 +1,7 @@
+.idea
+.env
+/config/app.php
+/public/coverage
+/public/media
+/public/uploads
+/vendor

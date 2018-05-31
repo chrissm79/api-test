@@ -1,0 +1,5368 @@
+<?php
+return array (
+  'kind' => 'Document',
+  'loc' => 
+  array (
+    'start' => 0,
+    'end' => 3095,
+  ),
+  'definitions' => 
+  array (
+    0 => 
+    array (
+      'kind' => 'InterfaceTypeDefinition',
+      'loc' => 
+      array (
+        'start' => 24,
+        'end' => 232,
+      ),
+      'name' => 
+      array (
+        'kind' => 'Name',
+        'loc' => 
+        array (
+          'start' => 34,
+          'end' => 38,
+        ),
+        'value' => 'Node',
+      ),
+      'directives' => 
+      array (
+        0 => 
+        array (
+          'kind' => 'Directive',
+          'loc' => 
+          array (
+            'start' => 39,
+            'end' => 140,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 40,
+              'end' => 49,
+            ),
+            'value' => 'interface',
+          ),
+          'arguments' => 
+          array (
+            0 => 
+            array (
+              'kind' => 'Argument',
+              'loc' => 
+              array (
+                'start' => 50,
+                'end' => 139,
+              ),
+              'value' => 
+              array (
+                'kind' => 'StringValue',
+                'loc' => 
+                array (
+                  'start' => 60,
+                  'end' => 139,
+                ),
+                'value' => 'Nuwave\\Lighthouse\\Support\\Http\\GraphQL\\Interfaces\\NodeInterface@resolve',
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 50,
+                  'end' => 58,
+                ),
+                'value' => 'resolver',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'fields' => 
+      array (
+        0 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 222,
+            'end' => 230,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 222,
+              'end' => 225,
+            ),
+            'value' => '_id',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 227,
+              'end' => 230,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 227,
+                'end' => 229,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 227,
+                  'end' => 229,
+                ),
+                'value' => 'ID',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => ' Global identifier that can be used to resolve any Node implementation.
+',
+        ),
+      ),
+      'description' => ' Node global interface
+',
+    ),
+    1 => 
+    array (
+      'kind' => 'ObjectTypeDefinition',
+      'loc' => 
+      array (
+        'start' => 233,
+        'end' => 763,
+      ),
+      'name' => 
+      array (
+        'kind' => 'Name',
+        'loc' => 
+        array (
+          'start' => 238,
+          'end' => 246,
+        ),
+        'value' => 'PageInfo',
+      ),
+      'interfaces' => 
+      array (
+      ),
+      'directives' => 
+      array (
+      ),
+      'fields' => 
+      array (
+        0 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 303,
+            'end' => 324,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 303,
+              'end' => 314,
+            ),
+            'value' => 'hasNextPage',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 316,
+              'end' => 324,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 316,
+                'end' => 323,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 316,
+                  'end' => 323,
+                ),
+                'value' => 'Boolean',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => ' When paginating forwards, are there more items?
+',
+        ),
+        1 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 381,
+            'end' => 406,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 381,
+              'end' => 396,
+            ),
+            'value' => 'hasPreviousPage',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 398,
+              'end' => 406,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 398,
+                'end' => 405,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 398,
+                  'end' => 405,
+                ),
+                'value' => 'Boolean',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => ' When paginating backwards, are there more items?
+',
+        ),
+        2 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 465,
+            'end' => 484,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 465,
+              'end' => 476,
+            ),
+            'value' => 'startCursor',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 478,
+              'end' => 484,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 478,
+                'end' => 484,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => ' When paginating backwards, the cursor to continue.
+',
+        ),
+        3 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 542,
+            'end' => 559,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 542,
+              'end' => 551,
+            ),
+            'value' => 'endCursor',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 553,
+              'end' => 559,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 553,
+                'end' => 559,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => ' When paginating forwards, the cursor to continue.
+',
+        ),
+        4 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 603,
+            'end' => 613,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 603,
+              'end' => 608,
+            ),
+            'value' => 'total',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 610,
+              'end' => 613,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 610,
+                'end' => 613,
+              ),
+              'value' => 'Int',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => ' Total number of node in connection.
+',
+        ),
+        5 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 656,
+            'end' => 666,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 656,
+              'end' => 661,
+            ),
+            'value' => 'count',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 663,
+              'end' => 666,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 663,
+                'end' => 666,
+              ),
+              'value' => 'Int',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => ' Count of nodes in current request.
+',
+        ),
+        6 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 699,
+            'end' => 715,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 699,
+              'end' => 710,
+            ),
+            'value' => 'currentPage',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 712,
+              'end' => 715,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 712,
+                'end' => 715,
+              ),
+              'value' => 'Int',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => ' Current page of request.
+',
+        ),
+        7 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 748,
+            'end' => 761,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 748,
+              'end' => 756,
+            ),
+            'value' => 'lastPage',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 758,
+              'end' => 761,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 758,
+                'end' => 761,
+              ),
+              'value' => 'Int',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => ' Last page in connection.
+',
+        ),
+      ),
+      'description' => NULL,
+    ),
+    2 => 
+    array (
+      'kind' => 'ObjectTypeDefinition',
+      'loc' => 
+      array (
+        'start' => 765,
+        'end' => 1268,
+      ),
+      'name' => 
+      array (
+        'kind' => 'Name',
+        'loc' => 
+        array (
+          'start' => 770,
+          'end' => 783,
+        ),
+        'value' => 'PaginatorInfo',
+      ),
+      'interfaces' => 
+      array (
+      ),
+      'directives' => 
+      array (
+      ),
+      'fields' => 
+      array (
+        0 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 836,
+            'end' => 847,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 836,
+              'end' => 841,
+            ),
+            'value' => 'count',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 843,
+              'end' => 847,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 843,
+                'end' => 846,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 843,
+                  'end' => 846,
+                ),
+                'value' => 'Int',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => ' Total count of available items in the page.
+',
+        ),
+        1 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 880,
+            'end' => 897,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 880,
+              'end' => 891,
+            ),
+            'value' => 'currentPage',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 893,
+              'end' => 897,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 893,
+                'end' => 896,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 893,
+                  'end' => 896,
+                ),
+                'value' => 'Int',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => ' Current pagination page.
+',
+        ),
+        2 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 946,
+            'end' => 961,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 946,
+              'end' => 955,
+            ),
+            'value' => 'firstItem',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 957,
+              'end' => 961,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 957,
+                'end' => 960,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 957,
+                  'end' => 960,
+                ),
+                'value' => 'Int',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => ' Index of first item in the current page.
+',
+        ),
+        3 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 999,
+            'end' => 1021,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 999,
+              'end' => 1011,
+            ),
+            'value' => 'hasMorePages',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 1013,
+              'end' => 1021,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 1013,
+                'end' => 1020,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 1013,
+                  'end' => 1020,
+                ),
+                'value' => 'Boolean',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => ' If collection has more pages.
+',
+        ),
+        4 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1069,
+            'end' => 1083,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1069,
+              'end' => 1077,
+            ),
+            'value' => 'lastItem',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 1079,
+              'end' => 1083,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 1079,
+                'end' => 1082,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 1079,
+                  'end' => 1082,
+                ),
+                'value' => 'Int',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => ' Index of last item in the current page.
+',
+        ),
+        5 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1127,
+            'end' => 1141,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1127,
+              'end' => 1135,
+            ),
+            'value' => 'lastPage',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 1137,
+              'end' => 1141,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 1137,
+                'end' => 1140,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 1137,
+                  'end' => 1140,
+                ),
+                'value' => 'Int',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => ' Last page number of the collection.
+',
+        ),
+        6 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1193,
+            'end' => 1206,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1193,
+              'end' => 1200,
+            ),
+            'value' => 'perPage',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 1202,
+              'end' => 1206,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 1202,
+                'end' => 1205,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 1202,
+                  'end' => 1205,
+                ),
+                'value' => 'Int',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => ' Number of items per page in the collection.
+',
+        ),
+        7 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1255,
+            'end' => 1266,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1255,
+              'end' => 1260,
+            ),
+            'value' => 'total',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 1262,
+              'end' => 1266,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 1262,
+                'end' => 1265,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 1262,
+                  'end' => 1265,
+                ),
+                'value' => 'Int',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => ' Total items available in the collection.
+',
+        ),
+      ),
+      'description' => NULL,
+    ),
+    3 => 
+    array (
+      'kind' => 'ScalarTypeDefinition',
+      'loc' => 
+      array (
+        'start' => 1270,
+        'end' => 1312,
+      ),
+      'name' => 
+      array (
+        'kind' => 'Name',
+        'loc' => 
+        array (
+          'start' => 1277,
+          'end' => 1285,
+        ),
+        'value' => 'DateTime',
+      ),
+      'directives' => 
+      array (
+        0 => 
+        array (
+          'kind' => 'Directive',
+          'loc' => 
+          array (
+            'start' => 1286,
+            'end' => 1312,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1287,
+              'end' => 1293,
+            ),
+            'value' => 'scalar',
+          ),
+          'arguments' => 
+          array (
+            0 => 
+            array (
+              'kind' => 'Argument',
+              'loc' => 
+              array (
+                'start' => 1294,
+                'end' => 1311,
+              ),
+              'value' => 
+              array (
+                'kind' => 'StringValue',
+                'loc' => 
+                array (
+                  'start' => 1301,
+                  'end' => 1311,
+                ),
+                'value' => 'DateTime',
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 1294,
+                  'end' => 1299,
+                ),
+                'value' => 'class',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'description' => NULL,
+    ),
+    4 => 
+    array (
+      'kind' => 'ObjectTypeDefinition',
+      'loc' => 
+      array (
+        'start' => 1314,
+        'end' => 1424,
+      ),
+      'name' => 
+      array (
+        'kind' => 'Name',
+        'loc' => 
+        array (
+          'start' => 1319,
+          'end' => 1323,
+        ),
+        'value' => 'User',
+      ),
+      'interfaces' => 
+      array (
+      ),
+      'directives' => 
+      array (
+      ),
+      'fields' => 
+      array (
+        0 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1328,
+            'end' => 1345,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1328,
+              'end' => 1330,
+            ),
+            'value' => 'id',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 1332,
+              'end' => 1335,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 1332,
+                'end' => 1334,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 1332,
+                  'end' => 1334,
+                ),
+                'value' => 'ID',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+            0 => 
+            array (
+              'kind' => 'Directive',
+              'loc' => 
+              array (
+                'start' => 1336,
+                'end' => 1345,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 1337,
+                  'end' => 1345,
+                ),
+                'value' => 'globalId',
+              ),
+              'arguments' => 
+              array (
+              ),
+            ),
+          ),
+          'description' => NULL,
+        ),
+        1 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1348,
+            'end' => 1360,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1348,
+              'end' => 1352,
+            ),
+            'value' => 'name',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1354,
+              'end' => 1360,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1354,
+                'end' => 1360,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        2 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1363,
+            'end' => 1376,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1363,
+              'end' => 1368,
+            ),
+            'value' => 'email',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1370,
+              'end' => 1376,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1370,
+                'end' => 1376,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        3 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1379,
+            'end' => 1399,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1379,
+              'end' => 1389,
+            ),
+            'value' => 'created_at',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1391,
+              'end' => 1399,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1391,
+                'end' => 1399,
+              ),
+              'value' => 'DateTime',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        4 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1402,
+            'end' => 1422,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1402,
+              'end' => 1412,
+            ),
+            'value' => 'updated_at',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1414,
+              'end' => 1422,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1414,
+                'end' => 1422,
+              ),
+              'value' => 'DateTime',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+      ),
+      'description' => NULL,
+    ),
+    5 => 
+    array (
+      'kind' => 'ObjectTypeDefinition',
+      'loc' => 
+      array (
+        'start' => 1426,
+        'end' => 1832,
+      ),
+      'name' => 
+      array (
+        'kind' => 'Name',
+        'loc' => 
+        array (
+          'start' => 1431,
+          'end' => 1436,
+        ),
+        'value' => 'Image',
+      ),
+      'interfaces' => 
+      array (
+      ),
+      'directives' => 
+      array (
+      ),
+      'fields' => 
+      array (
+        0 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1441,
+            'end' => 1458,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1441,
+              'end' => 1443,
+            ),
+            'value' => 'id',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 1445,
+              'end' => 1448,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 1445,
+                'end' => 1447,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 1445,
+                  'end' => 1447,
+                ),
+                'value' => 'ID',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+            0 => 
+            array (
+              'kind' => 'Directive',
+              'loc' => 
+              array (
+                'start' => 1449,
+                'end' => 1458,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 1450,
+                  'end' => 1458,
+                ),
+                'value' => 'globalId',
+              ),
+              'arguments' => 
+              array (
+              ),
+            ),
+          ),
+          'description' => NULL,
+        ),
+        1 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1461,
+            'end' => 1487,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1461,
+              'end' => 1467,
+            ),
+            'value' => 'person',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 1469,
+              'end' => 1476,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 1469,
+                'end' => 1475,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 1469,
+                  'end' => 1475,
+                ),
+                'value' => 'Person',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+            0 => 
+            array (
+              'kind' => 'Directive',
+              'loc' => 
+              array (
+                'start' => 1477,
+                'end' => 1487,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 1478,
+                  'end' => 1487,
+                ),
+                'value' => 'belongsTo',
+              ),
+              'arguments' => 
+              array (
+              ),
+            ),
+          ),
+          'description' => NULL,
+        ),
+        2 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1490,
+            'end' => 1506,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1490,
+              'end' => 1498,
+            ),
+            'value' => 'filename',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1500,
+              'end' => 1506,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1500,
+                'end' => 1506,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        3 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1509,
+            'end' => 1529,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1509,
+              'end' => 1521,
+            ),
+            'value' => 'filename_url',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1523,
+              'end' => 1529,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1523,
+                'end' => 1529,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        4 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1532,
+            'end' => 1549,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1532,
+              'end' => 1541,
+            ),
+            'value' => 'thumbnail',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1543,
+              'end' => 1549,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1543,
+                'end' => 1549,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        5 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1552,
+            'end' => 1563,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1552,
+              'end' => 1558,
+            ),
+            'value' => 'rating',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1560,
+              'end' => 1563,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1560,
+                'end' => 1563,
+              ),
+              'value' => 'Int',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        6 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1566,
+            'end' => 1580,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1566,
+              'end' => 1575,
+            ),
+            'value' => 'thumbs_up',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1577,
+              'end' => 1580,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1577,
+                'end' => 1580,
+              ),
+              'value' => 'Int',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        7 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1583,
+            'end' => 1599,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1583,
+              'end' => 1594,
+            ),
+            'value' => 'thumbs_down',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1596,
+              'end' => 1599,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1596,
+                'end' => 1599,
+              ),
+              'value' => 'Int',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        8 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1602,
+            'end' => 1614,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1602,
+              'end' => 1606,
+            ),
+            'value' => 'hash',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1608,
+              'end' => 1614,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1608,
+                'end' => 1614,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        9 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1617,
+            'end' => 1634,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1617,
+              'end' => 1626,
+            ),
+            'value' => 'social_id',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1628,
+              'end' => 1634,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1628,
+                'end' => 1634,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        10 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1637,
+            'end' => 1655,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1637,
+              'end' => 1646,
+            ),
+            'value' => 'nominated',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1648,
+              'end' => 1655,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1648,
+                'end' => 1655,
+              ),
+              'value' => 'Boolean',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        11 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1658,
+            'end' => 1673,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1658,
+              'end' => 1664,
+            ),
+            'value' => 'active',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1666,
+              'end' => 1673,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1666,
+                'end' => 1673,
+              ),
+              'value' => 'Boolean',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        12 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1676,
+            'end' => 1696,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1676,
+              'end' => 1686,
+            ),
+            'value' => 'created_at',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1688,
+              'end' => 1696,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1688,
+                'end' => 1696,
+              ),
+              'value' => 'DateTime',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        13 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1699,
+            'end' => 1766,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1699,
+              'end' => 1707,
+            ),
+            'value' => 'keywords',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 1709,
+              'end' => 1720,
+            ),
+            'type' => 
+            array (
+              'kind' => 'ListType',
+              'loc' => 
+              array (
+                'start' => 1709,
+                'end' => 1719,
+              ),
+              'type' => 
+              array (
+                'kind' => 'NonNullType',
+                'loc' => 
+                array (
+                  'start' => 1710,
+                  'end' => 1718,
+                ),
+                'type' => 
+                array (
+                  'kind' => 'NamedType',
+                  'loc' => 
+                  array (
+                    'start' => 1710,
+                    'end' => 1717,
+                  ),
+                  'name' => 
+                  array (
+                    'kind' => 'Name',
+                    'loc' => 
+                    array (
+                      'start' => 1710,
+                      'end' => 1717,
+                    ),
+                    'value' => 'Keyword',
+                  ),
+                ),
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+            0 => 
+            array (
+              'kind' => 'Directive',
+              'loc' => 
+              array (
+                'start' => 1721,
+                'end' => 1766,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 1722,
+                  'end' => 1729,
+                ),
+                'value' => 'hasMany',
+              ),
+              'arguments' => 
+              array (
+                0 => 
+                array (
+                  'kind' => 'Argument',
+                  'loc' => 
+                  array (
+                    'start' => 1730,
+                    'end' => 1743,
+                  ),
+                  'value' => 
+                  array (
+                    'kind' => 'StringValue',
+                    'loc' => 
+                    array (
+                      'start' => 1736,
+                      'end' => 1743,
+                    ),
+                    'value' => 'relay',
+                  ),
+                  'name' => 
+                  array (
+                    'kind' => 'Name',
+                    'loc' => 
+                    array (
+                      'start' => 1730,
+                      'end' => 1734,
+                    ),
+                    'value' => 'type',
+                  ),
+                ),
+                1 => 
+                array (
+                  'kind' => 'Argument',
+                  'loc' => 
+                  array (
+                    'start' => 1745,
+                    'end' => 1765,
+                  ),
+                  'value' => 
+                  array (
+                    'kind' => 'StringValue',
+                    'loc' => 
+                    array (
+                      'start' => 1755,
+                      'end' => 1765,
+                    ),
+                    'value' => 'keywords',
+                  ),
+                  'name' => 
+                  array (
+                    'kind' => 'Name',
+                    'loc' => 
+                    array (
+                      'start' => 1745,
+                      'end' => 1753,
+                    ),
+                    'value' => 'relation',
+                  ),
+                ),
+              ),
+            ),
+          ),
+          'description' => NULL,
+        ),
+        14 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1769,
+            'end' => 1830,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1769,
+              'end' => 1775,
+            ),
+            'value' => 'colors',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 1777,
+              'end' => 1786,
+            ),
+            'type' => 
+            array (
+              'kind' => 'ListType',
+              'loc' => 
+              array (
+                'start' => 1777,
+                'end' => 1785,
+              ),
+              'type' => 
+              array (
+                'kind' => 'NonNullType',
+                'loc' => 
+                array (
+                  'start' => 1778,
+                  'end' => 1784,
+                ),
+                'type' => 
+                array (
+                  'kind' => 'NamedType',
+                  'loc' => 
+                  array (
+                    'start' => 1778,
+                    'end' => 1783,
+                  ),
+                  'name' => 
+                  array (
+                    'kind' => 'Name',
+                    'loc' => 
+                    array (
+                      'start' => 1778,
+                      'end' => 1783,
+                    ),
+                    'value' => 'Color',
+                  ),
+                ),
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+            0 => 
+            array (
+              'kind' => 'Directive',
+              'loc' => 
+              array (
+                'start' => 1787,
+                'end' => 1830,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 1788,
+                  'end' => 1795,
+                ),
+                'value' => 'hasMany',
+              ),
+              'arguments' => 
+              array (
+                0 => 
+                array (
+                  'kind' => 'Argument',
+                  'loc' => 
+                  array (
+                    'start' => 1796,
+                    'end' => 1809,
+                  ),
+                  'value' => 
+                  array (
+                    'kind' => 'StringValue',
+                    'loc' => 
+                    array (
+                      'start' => 1802,
+                      'end' => 1809,
+                    ),
+                    'value' => 'relay',
+                  ),
+                  'name' => 
+                  array (
+                    'kind' => 'Name',
+                    'loc' => 
+                    array (
+                      'start' => 1796,
+                      'end' => 1800,
+                    ),
+                    'value' => 'type',
+                  ),
+                ),
+                1 => 
+                array (
+                  'kind' => 'Argument',
+                  'loc' => 
+                  array (
+                    'start' => 1811,
+                    'end' => 1829,
+                  ),
+                  'value' => 
+                  array (
+                    'kind' => 'StringValue',
+                    'loc' => 
+                    array (
+                      'start' => 1821,
+                      'end' => 1829,
+                    ),
+                    'value' => 'colors',
+                  ),
+                  'name' => 
+                  array (
+                    'kind' => 'Name',
+                    'loc' => 
+                    array (
+                      'start' => 1811,
+                      'end' => 1819,
+                    ),
+                    'value' => 'relation',
+                  ),
+                ),
+              ),
+            ),
+          ),
+          'description' => NULL,
+        ),
+      ),
+      'description' => NULL,
+    ),
+    6 => 
+    array (
+      'kind' => 'ObjectTypeDefinition',
+      'loc' => 
+      array (
+        'start' => 1834,
+        'end' => 2046,
+      ),
+      'name' => 
+      array (
+        'kind' => 'Name',
+        'loc' => 
+        array (
+          'start' => 1839,
+          'end' => 1845,
+        ),
+        'value' => 'Slogan',
+      ),
+      'interfaces' => 
+      array (
+      ),
+      'directives' => 
+      array (
+      ),
+      'fields' => 
+      array (
+        0 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1850,
+            'end' => 1857,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1850,
+              'end' => 1852,
+            ),
+            'value' => 'id',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 1854,
+              'end' => 1857,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 1854,
+                'end' => 1856,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 1854,
+                  'end' => 1856,
+                ),
+                'value' => 'ID',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        1 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1860,
+            'end' => 1874,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1860,
+              'end' => 1866,
+            ),
+            'value' => 'slogan',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1868,
+              'end' => 1874,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1868,
+                'end' => 1874,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        2 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1877,
+            'end' => 1888,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1877,
+              'end' => 1883,
+            ),
+            'value' => 'rating',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1885,
+              'end' => 1888,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1885,
+                'end' => 1888,
+              ),
+              'value' => 'Int',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        3 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1891,
+            'end' => 1905,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1891,
+              'end' => 1900,
+            ),
+            'value' => 'thumbs_up',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1902,
+              'end' => 1905,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1902,
+                'end' => 1905,
+              ),
+              'value' => 'Int',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        4 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1908,
+            'end' => 1924,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1908,
+              'end' => 1919,
+            ),
+            'value' => 'thumbs_down',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1921,
+              'end' => 1924,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1921,
+                'end' => 1924,
+              ),
+              'value' => 'Int',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        5 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1927,
+            'end' => 1942,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1927,
+              'end' => 1933,
+            ),
+            'value' => 'active',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1935,
+              'end' => 1942,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1935,
+                'end' => 1942,
+              ),
+              'value' => 'Boolean',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        6 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1945,
+            'end' => 1963,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1945,
+              'end' => 1954,
+            ),
+            'value' => 'nominated',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1956,
+              'end' => 1963,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1956,
+                'end' => 1963,
+              ),
+              'value' => 'Boolean',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        7 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1966,
+            'end' => 1986,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1966,
+              'end' => 1976,
+            ),
+            'value' => 'created_at',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 1978,
+              'end' => 1986,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 1978,
+                'end' => 1986,
+              ),
+              'value' => 'DateTime',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        8 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 1989,
+            'end' => 2044,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 1989,
+              'end' => 1993,
+            ),
+            'value' => 'tags',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 1995,
+              'end' => 2002,
+            ),
+            'type' => 
+            array (
+              'kind' => 'ListType',
+              'loc' => 
+              array (
+                'start' => 1995,
+                'end' => 2001,
+              ),
+              'type' => 
+              array (
+                'kind' => 'NonNullType',
+                'loc' => 
+                array (
+                  'start' => 1996,
+                  'end' => 2000,
+                ),
+                'type' => 
+                array (
+                  'kind' => 'NamedType',
+                  'loc' => 
+                  array (
+                    'start' => 1996,
+                    'end' => 1999,
+                  ),
+                  'name' => 
+                  array (
+                    'kind' => 'Name',
+                    'loc' => 
+                    array (
+                      'start' => 1996,
+                      'end' => 1999,
+                    ),
+                    'value' => 'Tag',
+                  ),
+                ),
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+            0 => 
+            array (
+              'kind' => 'Directive',
+              'loc' => 
+              array (
+                'start' => 2003,
+                'end' => 2044,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 2004,
+                  'end' => 2011,
+                ),
+                'value' => 'hasMany',
+              ),
+              'arguments' => 
+              array (
+                0 => 
+                array (
+                  'kind' => 'Argument',
+                  'loc' => 
+                  array (
+                    'start' => 2012,
+                    'end' => 2025,
+                  ),
+                  'value' => 
+                  array (
+                    'kind' => 'StringValue',
+                    'loc' => 
+                    array (
+                      'start' => 2018,
+                      'end' => 2025,
+                    ),
+                    'value' => 'relay',
+                  ),
+                  'name' => 
+                  array (
+                    'kind' => 'Name',
+                    'loc' => 
+                    array (
+                      'start' => 2012,
+                      'end' => 2016,
+                    ),
+                    'value' => 'type',
+                  ),
+                ),
+                1 => 
+                array (
+                  'kind' => 'Argument',
+                  'loc' => 
+                  array (
+                    'start' => 2027,
+                    'end' => 2043,
+                  ),
+                  'value' => 
+                  array (
+                    'kind' => 'StringValue',
+                    'loc' => 
+                    array (
+                      'start' => 2037,
+                      'end' => 2043,
+                    ),
+                    'value' => 'tags',
+                  ),
+                  'name' => 
+                  array (
+                    'kind' => 'Name',
+                    'loc' => 
+                    array (
+                      'start' => 2027,
+                      'end' => 2035,
+                    ),
+                    'value' => 'relation',
+                  ),
+                ),
+              ),
+            ),
+          ),
+          'description' => NULL,
+        ),
+      ),
+      'description' => NULL,
+    ),
+    7 => 
+    array (
+      'kind' => 'ObjectTypeDefinition',
+      'loc' => 
+      array (
+        'start' => 2048,
+        'end' => 2470,
+      ),
+      'name' => 
+      array (
+        'kind' => 'Name',
+        'loc' => 
+        array (
+          'start' => 2053,
+          'end' => 2059,
+        ),
+        'value' => 'Person',
+      ),
+      'interfaces' => 
+      array (
+      ),
+      'directives' => 
+      array (
+      ),
+      'fields' => 
+      array (
+        0 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2064,
+            'end' => 2081,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2064,
+              'end' => 2066,
+            ),
+            'value' => 'id',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 2068,
+              'end' => 2071,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 2068,
+                'end' => 2070,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 2068,
+                  'end' => 2070,
+                ),
+                'value' => 'ID',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+            0 => 
+            array (
+              'kind' => 'Directive',
+              'loc' => 
+              array (
+                'start' => 2072,
+                'end' => 2081,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 2073,
+                  'end' => 2081,
+                ),
+                'value' => 'globalId',
+              ),
+              'arguments' => 
+              array (
+              ),
+            ),
+          ),
+          'description' => NULL,
+        ),
+        1 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2084,
+            'end' => 2100,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2084,
+              'end' => 2092,
+            ),
+            'value' => 'username',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2094,
+              'end' => 2100,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2094,
+                'end' => 2100,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        2 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2103,
+            'end' => 2115,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2103,
+              'end' => 2107,
+            ),
+            'value' => 'name',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2109,
+              'end' => 2115,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2109,
+                'end' => 2115,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        3 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2118,
+            'end' => 2131,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2118,
+              'end' => 2123,
+            ),
+            'value' => 'email',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2125,
+              'end' => 2131,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2125,
+                'end' => 2131,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        4 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2134,
+            'end' => 2150,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2134,
+              'end' => 2142,
+            ),
+            'value' => 'location',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2144,
+              'end' => 2150,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2144,
+                'end' => 2150,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        5 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2153,
+            'end' => 2168,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2153,
+              'end' => 2160,
+            ),
+            'value' => 'country',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2162,
+              'end' => 2168,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2162,
+                'end' => 2168,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        6 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2171,
+            'end' => 2191,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2171,
+              'end' => 2181,
+            ),
+            'value' => 'last_login',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2183,
+              'end' => 2191,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2183,
+                'end' => 2191,
+              ),
+              'value' => 'DateTime',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        7 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2194,
+            'end' => 2209,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2194,
+              'end' => 2200,
+            ),
+            'value' => 'active',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2202,
+              'end' => 2209,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2202,
+                'end' => 2209,
+              ),
+              'value' => 'Boolean',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        8 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2212,
+            'end' => 2226,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2212,
+              'end' => 2218,
+            ),
+            'value' => 'source',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2220,
+              'end' => 2226,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2220,
+                'end' => 2226,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        9 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2229,
+            'end' => 2252,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2229,
+              'end' => 2244,
+            ),
+            'value' => 'profile_picture',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2246,
+              'end' => 2252,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2246,
+                'end' => 2252,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        10 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2255,
+            'end' => 2282,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2255,
+              'end' => 2274,
+            ),
+            'value' => 'profile_picture_url',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2276,
+              'end' => 2282,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2276,
+                'end' => 2282,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        11 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2285,
+            'end' => 2316,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2285,
+              'end' => 2308,
+            ),
+            'value' => 'profile_picture_cropped',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2310,
+              'end' => 2316,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2310,
+                'end' => 2316,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        12 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2319,
+            'end' => 2344,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2319,
+              'end' => 2336,
+            ),
+            'value' => 'profile_animation',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2338,
+              'end' => 2344,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2338,
+                'end' => 2344,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        13 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2347,
+            'end' => 2365,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2347,
+              'end' => 2356,
+            ),
+            'value' => 'has_video',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2358,
+              'end' => 2365,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2358,
+                'end' => 2365,
+              ),
+              'value' => 'Boolean',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        14 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2368,
+            'end' => 2385,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2368,
+              'end' => 2377,
+            ),
+            'value' => 'video_url',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2379,
+              'end' => 2385,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2379,
+                'end' => 2385,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        15 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2388,
+            'end' => 2404,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2388,
+              'end' => 2399,
+            ),
+            'value' => 'wyw_user_id',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2401,
+              'end' => 2404,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2401,
+                'end' => 2404,
+              ),
+              'value' => 'Int',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        16 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2407,
+            'end' => 2468,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2407,
+              'end' => 2413,
+            ),
+            'value' => 'images',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 2415,
+              'end' => 2424,
+            ),
+            'type' => 
+            array (
+              'kind' => 'ListType',
+              'loc' => 
+              array (
+                'start' => 2415,
+                'end' => 2423,
+              ),
+              'type' => 
+              array (
+                'kind' => 'NonNullType',
+                'loc' => 
+                array (
+                  'start' => 2416,
+                  'end' => 2422,
+                ),
+                'type' => 
+                array (
+                  'kind' => 'NamedType',
+                  'loc' => 
+                  array (
+                    'start' => 2416,
+                    'end' => 2421,
+                  ),
+                  'name' => 
+                  array (
+                    'kind' => 'Name',
+                    'loc' => 
+                    array (
+                      'start' => 2416,
+                      'end' => 2421,
+                    ),
+                    'value' => 'Image',
+                  ),
+                ),
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+            0 => 
+            array (
+              'kind' => 'Directive',
+              'loc' => 
+              array (
+                'start' => 2425,
+                'end' => 2468,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 2426,
+                  'end' => 2433,
+                ),
+                'value' => 'hasMany',
+              ),
+              'arguments' => 
+              array (
+                0 => 
+                array (
+                  'kind' => 'Argument',
+                  'loc' => 
+                  array (
+                    'start' => 2434,
+                    'end' => 2447,
+                  ),
+                  'value' => 
+                  array (
+                    'kind' => 'StringValue',
+                    'loc' => 
+                    array (
+                      'start' => 2440,
+                      'end' => 2447,
+                    ),
+                    'value' => 'relay',
+                  ),
+                  'name' => 
+                  array (
+                    'kind' => 'Name',
+                    'loc' => 
+                    array (
+                      'start' => 2434,
+                      'end' => 2438,
+                    ),
+                    'value' => 'type',
+                  ),
+                ),
+                1 => 
+                array (
+                  'kind' => 'Argument',
+                  'loc' => 
+                  array (
+                    'start' => 2449,
+                    'end' => 2467,
+                  ),
+                  'value' => 
+                  array (
+                    'kind' => 'StringValue',
+                    'loc' => 
+                    array (
+                      'start' => 2459,
+                      'end' => 2467,
+                    ),
+                    'value' => 'images',
+                  ),
+                  'name' => 
+                  array (
+                    'kind' => 'Name',
+                    'loc' => 
+                    array (
+                      'start' => 2449,
+                      'end' => 2457,
+                    ),
+                    'value' => 'relation',
+                  ),
+                ),
+              ),
+            ),
+          ),
+          'description' => NULL,
+        ),
+      ),
+      'description' => NULL,
+    ),
+    8 => 
+    array (
+      'kind' => 'ObjectTypeDefinition',
+      'loc' => 
+      array (
+        'start' => 2472,
+        'end' => 2562,
+      ),
+      'name' => 
+      array (
+        'kind' => 'Name',
+        'loc' => 
+        array (
+          'start' => 2477,
+          'end' => 2484,
+        ),
+        'value' => 'Keyword',
+      ),
+      'interfaces' => 
+      array (
+      ),
+      'directives' => 
+      array (
+      ),
+      'fields' => 
+      array (
+        0 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2489,
+            'end' => 2506,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2489,
+              'end' => 2491,
+            ),
+            'value' => 'id',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 2493,
+              'end' => 2496,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 2493,
+                'end' => 2495,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 2493,
+                  'end' => 2495,
+                ),
+                'value' => 'ID',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+            0 => 
+            array (
+              'kind' => 'Directive',
+              'loc' => 
+              array (
+                'start' => 2497,
+                'end' => 2506,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 2498,
+                  'end' => 2506,
+                ),
+                'value' => 'globalId',
+              ),
+              'arguments' => 
+              array (
+              ),
+            ),
+          ),
+          'description' => NULL,
+        ),
+        1 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2509,
+            'end' => 2524,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2509,
+              'end' => 2516,
+            ),
+            'value' => 'keyword',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2518,
+              'end' => 2524,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2518,
+                'end' => 2524,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        2 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2527,
+            'end' => 2538,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2527,
+              'end' => 2533,
+            ),
+            'value' => 'amount',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2535,
+              'end' => 2538,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2535,
+                'end' => 2538,
+              ),
+              'value' => 'Int',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        3 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2541,
+            'end' => 2560,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2541,
+              'end' => 2551,
+            ),
+            'value' => 'selectable',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2553,
+              'end' => 2560,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2553,
+                'end' => 2560,
+              ),
+              'value' => 'Boolean',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+      ),
+      'description' => NULL,
+    ),
+    9 => 
+    array (
+      'kind' => 'ObjectTypeDefinition',
+      'loc' => 
+      array (
+        'start' => 2564,
+        'end' => 2727,
+      ),
+      'name' => 
+      array (
+        'kind' => 'Name',
+        'loc' => 
+        array (
+          'start' => 2569,
+          'end' => 2574,
+        ),
+        'value' => 'Color',
+      ),
+      'interfaces' => 
+      array (
+      ),
+      'directives' => 
+      array (
+      ),
+      'fields' => 
+      array (
+        0 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2579,
+            'end' => 2596,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2579,
+              'end' => 2581,
+            ),
+            'value' => 'id',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 2583,
+              'end' => 2586,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 2583,
+                'end' => 2585,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 2583,
+                  'end' => 2585,
+                ),
+                'value' => 'ID',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+            0 => 
+            array (
+              'kind' => 'Directive',
+              'loc' => 
+              array (
+                'start' => 2587,
+                'end' => 2596,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 2588,
+                  'end' => 2596,
+                ),
+                'value' => 'globalId',
+              ),
+              'arguments' => 
+              array (
+              ),
+            ),
+          ),
+          'description' => NULL,
+        ),
+        1 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2599,
+            'end' => 2610,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2599,
+              'end' => 2602,
+            ),
+            'value' => 'hex',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2604,
+              'end' => 2610,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2604,
+                'end' => 2610,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        2 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2613,
+            'end' => 2624,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2613,
+              'end' => 2619,
+            ),
+            'value' => 'amount',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2621,
+              'end' => 2624,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2621,
+                'end' => 2624,
+              ),
+              'value' => 'Int',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        3 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2627,
+            'end' => 2643,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2627,
+              'end' => 2635,
+            ),
+            'value' => 'w3c_name',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2637,
+              'end' => 2643,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2637,
+                'end' => 2643,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        4 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2646,
+            'end' => 2661,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2646,
+              'end' => 2653,
+            ),
+            'value' => 'w3c_hex',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2655,
+              'end' => 2661,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2655,
+                'end' => 2661,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        5 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2664,
+            'end' => 2679,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2664,
+              'end' => 2674,
+            ),
+            'value' => 'w3c_amount',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2676,
+              'end' => 2679,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2676,
+                'end' => 2679,
+              ),
+              'value' => 'Int',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        6 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2682,
+            'end' => 2690,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2682,
+              'end' => 2685,
+            ),
+            'value' => 'hue',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2687,
+              'end' => 2690,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2687,
+                'end' => 2690,
+              ),
+              'value' => 'Int',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        7 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2693,
+            'end' => 2708,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2693,
+              'end' => 2703,
+            ),
+            'value' => 'saturation',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2705,
+              'end' => 2708,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2705,
+                'end' => 2708,
+              ),
+              'value' => 'Int',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        8 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2711,
+            'end' => 2725,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2711,
+              'end' => 2720,
+            ),
+            'value' => 'lightness',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2722,
+              'end' => 2725,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2722,
+                'end' => 2725,
+              ),
+              'value' => 'Int',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+      ),
+      'description' => NULL,
+    ),
+    10 => 
+    array (
+      'kind' => 'ObjectTypeDefinition',
+      'loc' => 
+      array (
+        'start' => 2729,
+        'end' => 2811,
+      ),
+      'name' => 
+      array (
+        'kind' => 'Name',
+        'loc' => 
+        array (
+          'start' => 2734,
+          'end' => 2737,
+        ),
+        'value' => 'Tag',
+      ),
+      'interfaces' => 
+      array (
+      ),
+      'directives' => 
+      array (
+      ),
+      'fields' => 
+      array (
+        0 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2742,
+            'end' => 2759,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2742,
+              'end' => 2744,
+            ),
+            'value' => 'id',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 2746,
+              'end' => 2749,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 2746,
+                'end' => 2748,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 2746,
+                  'end' => 2748,
+                ),
+                'value' => 'ID',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+            0 => 
+            array (
+              'kind' => 'Directive',
+              'loc' => 
+              array (
+                'start' => 2750,
+                'end' => 2759,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 2751,
+                  'end' => 2759,
+                ),
+                'value' => 'globalId',
+              ),
+              'arguments' => 
+              array (
+              ),
+            ),
+          ),
+          'description' => NULL,
+        ),
+        1 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2762,
+            'end' => 2773,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2762,
+              'end' => 2765,
+            ),
+            'value' => 'tag',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2767,
+              'end' => 2773,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2767,
+                'end' => 2773,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        2 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2776,
+            'end' => 2787,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2776,
+              'end' => 2782,
+            ),
+            'value' => 'amount',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2784,
+              'end' => 2787,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2784,
+                'end' => 2787,
+              ),
+              'value' => 'Int',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        3 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2790,
+            'end' => 2809,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2790,
+              'end' => 2800,
+            ),
+            'value' => 'selectable',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2802,
+              'end' => 2809,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2802,
+                'end' => 2809,
+              ),
+              'value' => 'Boolean',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+      ),
+      'description' => NULL,
+    ),
+    11 => 
+    array (
+      'kind' => 'ObjectTypeDefinition',
+      'loc' => 
+      array (
+        'start' => 2813,
+        'end' => 2890,
+      ),
+      'name' => 
+      array (
+        'kind' => 'Name',
+        'loc' => 
+        array (
+          'start' => 2818,
+          'end' => 2834,
+        ),
+        'value' => 'ResponsesPayload',
+      ),
+      'interfaces' => 
+      array (
+      ),
+      'directives' => 
+      array (
+      ),
+      'fields' => 
+      array (
+        0 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2839,
+            'end' => 2856,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2839,
+              'end' => 2846,
+            ),
+            'value' => 'success',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 2848,
+              'end' => 2856,
+            ),
+            'type' => 
+            array (
+              'kind' => 'NamedType',
+              'loc' => 
+              array (
+                'start' => 2848,
+                'end' => 2855,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 2848,
+                  'end' => 2855,
+                ),
+                'value' => 'Boolean',
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        1 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2859,
+            'end' => 2870,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2859,
+              'end' => 2862,
+            ),
+            'value' => 'msg',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2864,
+              'end' => 2870,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2864,
+                'end' => 2870,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+        2 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2873,
+            'end' => 2888,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2873,
+              'end' => 2880,
+            ),
+            'value' => 'payload',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2882,
+              'end' => 2888,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2882,
+                'end' => 2888,
+              ),
+              'value' => 'String',
+            ),
+          ),
+          'directives' => 
+          array (
+          ),
+          'description' => NULL,
+        ),
+      ),
+      'description' => NULL,
+    ),
+    12 => 
+    array (
+      'kind' => 'ObjectTypeDefinition',
+      'loc' => 
+      array (
+        'start' => 2892,
+        'end' => 3093,
+      ),
+      'name' => 
+      array (
+        'kind' => 'Name',
+        'loc' => 
+        array (
+          'start' => 2897,
+          'end' => 2902,
+        ),
+        'value' => 'Query',
+      ),
+      'interfaces' => 
+      array (
+      ),
+      'directives' => 
+      array (
+      ),
+      'fields' => 
+      array (
+        0 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2907,
+            'end' => 2925,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2907,
+              'end' => 2913,
+            ),
+            'value' => 'viewer',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NamedType',
+            'loc' => 
+            array (
+              'start' => 2915,
+              'end' => 2919,
+            ),
+            'name' => 
+            array (
+              'kind' => 'Name',
+              'loc' => 
+              array (
+                'start' => 2915,
+                'end' => 2919,
+              ),
+              'value' => 'User',
+            ),
+          ),
+          'directives' => 
+          array (
+            0 => 
+            array (
+              'kind' => 'Directive',
+              'loc' => 
+              array (
+                'start' => 2920,
+                'end' => 2925,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 2921,
+                  'end' => 2925,
+                ),
+                'value' => 'auth',
+              ),
+              'arguments' => 
+              array (
+              ),
+            ),
+          ),
+          'description' => NULL,
+        ),
+        1 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 2928,
+            'end' => 3006,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 2928,
+              'end' => 2934,
+            ),
+            'value' => 'images',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 2936,
+              'end' => 2945,
+            ),
+            'type' => 
+            array (
+              'kind' => 'ListType',
+              'loc' => 
+              array (
+                'start' => 2936,
+                'end' => 2944,
+              ),
+              'type' => 
+              array (
+                'kind' => 'NonNullType',
+                'loc' => 
+                array (
+                  'start' => 2937,
+                  'end' => 2943,
+                ),
+                'type' => 
+                array (
+                  'kind' => 'NamedType',
+                  'loc' => 
+                  array (
+                    'start' => 2937,
+                    'end' => 2942,
+                  ),
+                  'name' => 
+                  array (
+                    'kind' => 'Name',
+                    'loc' => 
+                    array (
+                      'start' => 2937,
+                      'end' => 2942,
+                    ),
+                    'value' => 'Image',
+                  ),
+                ),
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+            0 => 
+            array (
+              'kind' => 'Directive',
+              'loc' => 
+              array (
+                'start' => 2946,
+                'end' => 3006,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 2947,
+                  'end' => 2955,
+                ),
+                'value' => 'paginate',
+              ),
+              'arguments' => 
+              array (
+                0 => 
+                array (
+                  'kind' => 'Argument',
+                  'loc' => 
+                  array (
+                    'start' => 2956,
+                    'end' => 2969,
+                  ),
+                  'value' => 
+                  array (
+                    'kind' => 'StringValue',
+                    'loc' => 
+                    array (
+                      'start' => 2962,
+                      'end' => 2969,
+                    ),
+                    'value' => 'relay',
+                  ),
+                  'name' => 
+                  array (
+                    'kind' => 'Name',
+                    'loc' => 
+                    array (
+                      'start' => 2956,
+                      'end' => 2960,
+                    ),
+                    'value' => 'type',
+                  ),
+                ),
+                1 => 
+                array (
+                  'kind' => 'Argument',
+                  'loc' => 
+                  array (
+                    'start' => 2971,
+                    'end' => 3005,
+                  ),
+                  'value' => 
+                  array (
+                    'kind' => 'StringValue',
+                    'loc' => 
+                    array (
+                      'start' => 2978,
+                      'end' => 3005,
+                    ),
+                    'value' => 'App\\Models\\Image\\Image',
+                  ),
+                  'name' => 
+                  array (
+                    'kind' => 'Name',
+                    'loc' => 
+                    array (
+                      'start' => 2971,
+                      'end' => 2976,
+                    ),
+                    'value' => 'model',
+                  ),
+                ),
+              ),
+            ),
+          ),
+          'description' => NULL,
+        ),
+        2 => 
+        array (
+          'kind' => 'FieldDefinition',
+          'loc' => 
+          array (
+            'start' => 3009,
+            'end' => 3091,
+          ),
+          'name' => 
+          array (
+            'kind' => 'Name',
+            'loc' => 
+            array (
+              'start' => 3009,
+              'end' => 3016,
+            ),
+            'value' => 'persons',
+          ),
+          'arguments' => 
+          array (
+          ),
+          'type' => 
+          array (
+            'kind' => 'NonNullType',
+            'loc' => 
+            array (
+              'start' => 3018,
+              'end' => 3028,
+            ),
+            'type' => 
+            array (
+              'kind' => 'ListType',
+              'loc' => 
+              array (
+                'start' => 3018,
+                'end' => 3027,
+              ),
+              'type' => 
+              array (
+                'kind' => 'NonNullType',
+                'loc' => 
+                array (
+                  'start' => 3019,
+                  'end' => 3026,
+                ),
+                'type' => 
+                array (
+                  'kind' => 'NamedType',
+                  'loc' => 
+                  array (
+                    'start' => 3019,
+                    'end' => 3025,
+                  ),
+                  'name' => 
+                  array (
+                    'kind' => 'Name',
+                    'loc' => 
+                    array (
+                      'start' => 3019,
+                      'end' => 3025,
+                    ),
+                    'value' => 'Person',
+                  ),
+                ),
+              ),
+            ),
+          ),
+          'directives' => 
+          array (
+            0 => 
+            array (
+              'kind' => 'Directive',
+              'loc' => 
+              array (
+                'start' => 3029,
+                'end' => 3091,
+              ),
+              'name' => 
+              array (
+                'kind' => 'Name',
+                'loc' => 
+                array (
+                  'start' => 3030,
+                  'end' => 3038,
+                ),
+                'value' => 'paginate',
+              ),
+              'arguments' => 
+              array (
+                0 => 
+                array (
+                  'kind' => 'Argument',
+                  'loc' => 
+                  array (
+                    'start' => 3039,
+                    'end' => 3052,
+                  ),
+                  'value' => 
+                  array (
+                    'kind' => 'StringValue',
+                    'loc' => 
+                    array (
+                      'start' => 3045,
+                      'end' => 3052,
+                    ),
+                    'value' => 'relay',
+                  ),
+                  'name' => 
+                  array (
+                    'kind' => 'Name',
+                    'loc' => 
+                    array (
+                      'start' => 3039,
+                      'end' => 3043,
+                    ),
+                    'value' => 'type',
+                  ),
+                ),
+                1 => 
+                array (
+                  'kind' => 'Argument',
+                  'loc' => 
+                  array (
+                    'start' => 3054,
+                    'end' => 3090,
+                  ),
+                  'value' => 
+                  array (
+                    'kind' => 'StringValue',
+                    'loc' => 
+                    array (
+                      'start' => 3061,
+                      'end' => 3090,
+                    ),
+                    'value' => 'App\\Models\\Person\\Person',
+                  ),
+                  'name' => 
+                  array (
+                    'kind' => 'Name',
+                    'loc' => 
+                    array (
+                      'start' => 3054,
+                      'end' => 3059,
+                    ),
+                    'value' => 'model',
+                  ),
+                ),
+              ),
+            ),
+          ),
+          'description' => NULL,
+        ),
+      ),
+      'description' => NULL,
+    ),
+  ),
+);

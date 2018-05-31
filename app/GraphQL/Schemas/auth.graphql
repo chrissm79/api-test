@@ -1,0 +1,8 @@
+type User {
+  id: ID! @globalId
+  name: String
+  email: String
+  created_at: DateTime
+  updated_at: DateTime
+}
+

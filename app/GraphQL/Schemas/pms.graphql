@@ -1,0 +1,19 @@
+type Room {
+  id: ID! @globalId
+  name: String
+  available: String
+  reference: String
+  details: String
+  location: String
+  comments: [Comment!]! @hasMany
+}
+
+type Comment {
+  id: ID! @globalId
+  reference: String
+  title: String
+  content: String
+  created_at: DateTime
+  room: Room! @belongsTo
+}
+

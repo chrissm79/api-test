@@ -1,0 +1,158 @@
+scalar DateTime @scalar(class: "DateTime")
+
+interface Submission @interface(resolver: "App\\GraphQL\\Interfaces\\SearchResultInterface@resolveType") {
+  id: ID! @globalId
+  data: String
+}
+
+union Searchable @union = Image | Slogan | Artwork
+
+union Commentable @union = Image | Slogan | Artwork
+
+type SearchResult @model {
+  id: ID!
+  searchable: Searchable @belongsTo
+}
+
+type Comment @model {
+  id: ID! @globalId
+  body: String
+  number: Int!
+  commentable: Commentable @belongsTo
+}
+
+type User {
+  id: ID! @globalId
+  name: String
+  email: String
+  created_at: DateTime!
+  updated_at: DateTime!
+  last_login_at: DateTime!
+  last_request_at: DateTime!
+  submissions: [SearchResult!]! @paginate(type: "relay", model: "SearchResult")
+  images(orderBy: String): [Image!]! @paginate(type: "relay", model: "Image", scopes: ["orderAndFilter"])
+  ownImages(orderBy: String): [Image!]! @hasMany(type: "relay", relation: "images")
+  slogans(orderBy: String): [Slogan!]! @paginate(type: "relay", model: "Slogan", scopes: ["orderAndFilter"])
+  ownSlogans(orderBy: String): [Slogan!]! @hasMany(type: "relay", relation: "slogans", scopes: ["orderAndFilter"])
+  artworks(orderBy: String): [Artwork!]! @paginate(type: "relay", model: "Artwork", scopes: ["orderAndFilter"])
+  persons(orderBy: String): [Person!]! @paginate(type: "relay", model: "Person", scopes: ["orderAndFilter"])
+  person: Person @belongsTo
+}
+
+type Image implements Submission @model {
+  id: ID! @globalId
+  person: Person! @belongsTo
+  number: Int!
+  data: String @rename(attribute: "filename")
+  filename: String
+  filename_url: String
+  thumbnail: String
+  uri: String
+  rating: Int
+  thumbs_up: Int
+  thumbs_down: Int
+  hash: String
+  social_id: String
+  nominated: Boolean
+  active: Boolean
+  created_at: DateTime!
+  comments: [Comment!]! @hasMany(type: "relay", relation: "comments")
+  keywords: [Keyword!]! @hasMany(type: "relay", relation: "keywords")
+  colors: [Color!]! @hasMany(type: "relay", relation: "colors")
+}
+
+type Slogan implements Submission @model {
+  id: ID! @globalId
+  number: Int!
+  data: String @rename(attribute: "slogan")
+  person: Person! @belongsTo
+  slogan: String
+  rating: Int
+  thumbs_up: Int
+  thumbs_down: Int
+  active: Boolean
+  nominated: Boolean
+  created_at: DateTime!
+  tags: [Tag!]! @hasMany(type: "relay", relation: "tags")
+}
+
+type Artwork implements Submission @model {
+  id: ID! @globalId
+  number: Int!
+  rating: Int
+  data: String @rename(attribute: "rating")
+  thumbs_up: Int
+  thumbs_down: Int
+  type: String
+  filename: String
+  uri: String
+  created_at: DateTime
+  selected_at: DateTime
+  images: [Image!]! @hasMany(type: "relay", relation: "images")
+  slogans: [Slogan!]! @hasMany(type: "relay", relation: "slogans")
+}
+
+type Person {
+  id: ID! @globalId
+  number: Int!
+  first_name: String
+  last_name: String
+  email: String
+  location: String
+  country: String
+  last_login: DateTime
+  joined_at: DateTime
+  active: Boolean
+  source: String
+  profile_picture: String
+  profile_image_url: String
+  profile_picture_cropped: String
+  profile_animation: String
+  has_video: Boolean
+  video_url: String
+  wyw_user_id: Int
+  images: [Image!]! @hasMany(type: "relay", relation: "images")
+}
+
+type Keyword {
+  id: ID! @globalId
+  keyword: String
+  amount: Int
+  selectable: Boolean
+}
+
+type Color {
+  id: ID! @globalId
+  hex: String
+  amount: Int
+  w3c_name: String
+  w3c_hex: String
+  w3c_amount: Int
+  hue: Int
+  saturation: Int
+  lightness: Int
+}
+
+type Tag {
+  id: ID! @globalId
+  tag: String
+  amount: Int
+  selectable: Boolean
+}
+
+type ResponsesPayload {
+  success: Boolean!
+  msg: String
+  payload: String
+}
+
+type Query {
+  viewer: User @auth
+
+  images (orderBy: String): [Image!]! @paginate(type: "relay", model: "Image", scopes: ["orderAndFilter"])
+  artworks (orderBy: String): [Artwork!]! @paginate(type: "relay", model: "Artwork", scopes: ["orderAndFilter"])
+  persons: [Person!]! @paginate(type: "relay", model: "Person")
+  keywords: [Keyword!]! @paginate(type: "relay", model: "Keyword")
+  comments: [Comment!]! @paginate(type: "relay", model: "Comment")
+}
+
